@@ -30,7 +30,7 @@ while(True):
 		x,y,w,h = face
 
 		offsides =10
-		face_section = frame[y-offsides:y+h-offsides,x-offsides:x+w-offsides]
+		face_section = frame[y-offsides:y+h+offsides,x-offsides:x+w+offsides]
 
 		face_section = cv2.resize(face_section,(100,100))
 
